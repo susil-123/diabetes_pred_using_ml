@@ -10,10 +10,10 @@ st.write(
 """# Diabetes Detection
 Detect if someone has diabetes using machine learning and python
 """)
-img=Image.open('C:/Users/susil/Desktop/Untitled Folder/proj/dia.png')
+img=Image.open('C:/Users/susil/Desktop/Untitled Folder/proj/diab/dia.png')
 st.image(img,caption='ml',use_column_width=True)
 #get data
-df=pd.read_csv('C:/Users/susil/Desktop/Untitled Folder/proj/db.csv')
+df=pd.read_csv('C:/Users/susil/Desktop/Untitled Folder/proj/diab/db.csv')
 #subheader
 st.subheader('Data Information')
 #show data as table
