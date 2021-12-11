@@ -1,19 +1,27 @@
 import pandas as pd
 import numpy as np
+import seaborn as sns
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
+
+#from sklearn.linear_model import LogisticRegression
 from PIL import Image
 import streamlit as st
 from sklearn.model_selection import train_test_split
 #for title
-st.write(
-"""# Diabetes Detection
-Detect if someone has diabetes using machine learning and python
-""")
-img=Image.open('dia.png')
+st.markdown("""
+<style>
+.big-font {
+    font-size:100px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="big-font">Diabetes detection using ML</p>', unsafe_allow_html=True)
+img=Image.open('C:/Users/susil/Desktop/proj/diab/dia.png')
 st.image(img,caption='ml',use_column_width=True)
 #get data
-df=pd.read_csv('db.csv')
+df=pd.read_csv('C:/Users/susil/Desktop/proj/diab/db.csv')
 #subheader
 st.subheader('Data Information')
 #show data as table
