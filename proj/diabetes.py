@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
 
 #from sklearn.linear_model import LogisticRegression
-from PIL import Image
+#from PIL import Image
 import streamlit as st
 from sklearn.model_selection import train_test_split
 #for title
@@ -17,8 +17,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="big-font">Diabetes detection using ML</p>', unsafe_allow_html=True)
-img=Image.open('C:/Users/susil/Desktop/proj/diab/dia.png')
-st.image(img,caption='ml',use_column_width=True)
+#img=Image.open('C:/Users/susil/Desktop/proj/diab/dia.png')
+#st.image(img,caption='ml',use_column_width=True)
 #get data
 df=pd.read_csv('C:/Users/susil/Desktop/proj/diab/db.csv')
 #subheader
