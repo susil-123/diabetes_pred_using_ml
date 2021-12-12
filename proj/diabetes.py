@@ -20,7 +20,7 @@ st.markdown('<p class="big-font">Diabetes detection using ML</p>', unsafe_allow_
 #img=Image.open('C:/Users/susil/Desktop/proj/diab/dia.png')
 #st.image(img,caption='ml',use_column_width=True)
 #get data
-df=pd.read_csv('C:/Users/susil/Desktop/proj/diab/db.csv')
+df=pd.read_csv('db.csv',encoding = "ISO-8859-1")
 #subheader
 st.subheader('Data Information')
 #show data as table
